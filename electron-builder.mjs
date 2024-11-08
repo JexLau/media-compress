@@ -15,7 +15,7 @@ export default /** @type import('electron-builder').Configuration */
   },
   files: [
     'packages/entry-point.js',
-    '!node_modules/@vite-electron-builder/**',
+    '!node_modules/@mk-compress/**',
     ...await getListOfFilesFromEachWorkspace(),
   ],
 });

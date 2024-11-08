@@ -87,7 +87,7 @@ jobs:
     needs:
       - tests
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'cawa-93/vite-electron-builder'
+    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'cawa-93/mk-compress'
     steps:
       - name: Enable auto-merge for Dependabot PRs
         run: gh pr merge --auto --rebase "$PR_URL"

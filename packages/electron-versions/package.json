@@ -1,5 +1,5 @@
 {
-  "name": "@vite-electron-builder/electron-versions",
+  "name": "@mk-compress/electron-versions",
   "type": "module",
   "files": [],
   "main": "./index.js",

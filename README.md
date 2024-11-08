@@ -18,7 +18,7 @@ and best practices.
 
 Follow these steps to get started with the template:
 
-1. Click the **[Use this template](https://github.com/cawa-93/vite-electron-builder/generate)** button (you must be logged in) or just clone this repo.
+1. Click the **[Use this template](https://github.com/cawa-93/mk-compress/generate)** button (you must be logged in) or just clone this repo.
 2. Go to project folder and run `npm run init`.
 3. Start application in development mode by `npm start`.
 4. Compile executable by `npm run compile`.
@@ -32,7 +32,7 @@ That's all you need. 😉
 ### Lightweight
 When designing this template, I tried to keep ше minimal, using the platform's native features to the maximum and minimizing the number of third-party dependencies.
 
-### Electron [![Electron version](https://img.shields.io/github/package-json/dependency-version/cawa-93/vite-electron-builder/dev/electron?label=%20)][electron]
+### Electron [![Electron version](https://img.shields.io/github/package-json/dependency-version/cawa-93/mk-compress/dev/electron?label=%20)][electron]
 
 - This template uses the latest electron version with all the latest security patches.
 - The architecture of the application is built according to the security [guides](https://www.electronjs.org/docs/tutorial/security) and best practices.
@@ -57,7 +57,7 @@ the [`ci`](.github/workflows/ci.yml) workflow starts to create and deploy a new 
 
 The project is designed as monorepo where each part of the application is an independent package.
 Each package could have own tech stack, tests, dependencies, frameworks, etc.
-All internal names are prefixed by `@vite-electron-builder/*`.
+All internal names are prefixed by `@mk-compress/*`.
 There are no technical reasons for this.
 It's just for you to make it easier to understand the architecture.
 
@@ -80,7 +80,7 @@ As you may have noticed, the repository does **not** contain a package that impl
 The reason is that since the entire application is a mono-repository,
 you can use any web application based on any framework or bundler as a package for the interface.
 
-There is only one requirement: the template expects to import renderer by `@vite-electron-builder/renderer` name.
+There is only one requirement: the template expects to import renderer by `@mk-compress/renderer` name.
 
 > [!TIP]
 > You can create new renderer package in interactive mode by `npm run init`.
@@ -151,7 +151,7 @@ Now you can import and call the method in renderer
 
 ```ts
 // renderer/src/anywere/component.ts
-import {getUserData} from '@vite-electron-builder/preload'
+import {getUserData} from '@mk-compress/preload'
 
 // Method will came from exposed context
 // const userData = globalThis['getUserData']

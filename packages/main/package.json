@@ -1,5 +1,5 @@
 {
-  "name": "@vite-electron-builder/main",
+  "name": "@mk-compress/main",
   "type": "module",
   "scripts": {
     "build": "vite build",
@@ -12,12 +12,13 @@
     }
   },
   "dependencies": {
-    "@vite-electron-builder/preload": "*",
-    "@vite-electron-builder/renderer": "*",
+    "@mk-compress/preload": "*",
+    "@mk-compress/renderer": "*",
+    "@mk-compress/shared": "*",
     "electron-updater": "6.3.9"
   },
   "devDependencies": {
-    "@vite-electron-builder/electron-versions": "*",
+    "@mk-compress/electron-versions": "*",
     "vite": "5.4.10"
   }
 }

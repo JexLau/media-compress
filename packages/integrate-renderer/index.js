@@ -5,7 +5,7 @@ import * as fs from 'node:fs';
 const step = createStepLogger();
 
 await step(
-  'Changing renderer package name to "@vite-electron-builder/renderer"',
+  'Changing renderer package name to "@mk-compress/renderer"',
   changeRendererPackageName,
 );
 
@@ -23,10 +23,10 @@ await step(
 
 
 function changeRendererPackageName() {
-  if (pkgJson?.name === '@vite-electron-builder/renderer') {
+  if (pkgJson?.name === '@mk-compress/renderer') {
     return;
   }
-  pkgJson.name = '@vite-electron-builder/renderer';
+  pkgJson.name = '@mk-compress/renderer';
   savePkg();
 }
 

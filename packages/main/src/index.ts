@@ -59,7 +59,7 @@ export function initApp(initConfig: AppInitConfig) {
   //     .then(() => import('electron-devtools-installer'))
   //     .then(module => {
   //       const {default: installExtension, VUEJS_DEVTOOLS} =
-  //         //@ts-expect-error Hotfix for https://github.com/cawa-93/vite-electron-builder/issues/915
+  //         //@ts-expect-error Hotfix for https://github.com/cawa-93/mk-compress/issues/915
   //         typeof module.default === 'function' ? module : (module.default as typeof module);
   //
   //       return installExtension(VUEJS_DEVTOOLS, {
