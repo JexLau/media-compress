@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@mk-compress/electron-versions": "*",
-    "mlly": "1.7.2",
+    "mlly": "1.7.4",
     "vite": "5.4.10"
   }
 }
